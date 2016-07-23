@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Customer View</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif
+            }
+            
+            fieldset {
+                background: lightyellow;
+                border: 10px solid brown;
+                margin-bottom: 10px;
+                width: 720px;
+            }
+            
+            label {
+                width: 180px;
+                display: inline-block;
+                text-align: right;
+                vertical-align: top;
+            }
+            
+            .valueLabel {
+                text-align: left;
+                font-style: italic;
+                font-weight: bold;
+            }
+            
+            h2 {
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Customer View</h1>
+        <h3>(EJS Template Engine Demo)</h3>
+        <form id="customerDetails">
+            <fieldset>
+                <div>
+                    <label>Id: </label>
+                    <label class="valueLabel"><%= id %></label>
+                </div>
+                
+                <div>
+                    <label>Name: </label>
+                    <label class="valueLabel"><%= name %></label>
+                </div>
+                
+                <div>
+                    <label>Email: </label>
+                    <label class="valueLabel"><%= email %></label>
+                </div>
+                
+                <div>
+                    <label>Phone: </label>
+                    <label class="valueLabel"><%= phone %></label>
+                </div>
+                
+                <div>
+                    <label>City: </label>
+                    <label class="valueLabel"><%= city %></label>
+                </div>
+            </fieldset>
+        </form>
+        <h2>Thank you for submitting customer information!</h2>
+    </body>
+</html>
